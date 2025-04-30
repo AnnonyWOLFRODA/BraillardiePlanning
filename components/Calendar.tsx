@@ -1,3 +1,5 @@
+import React from 'react';
+
 type Activity = {
   id: string;
   name: string;
@@ -9,7 +11,7 @@ type CalendarProps = {
 };
 
 export function Calendar({ activity }: CalendarProps) {
-  if (!activity) return <div>Aucune activité sélectionnée</div>;
+  if (!activity) return null;
   
   return (
     <div className="bg-white p-4 rounded shadow">

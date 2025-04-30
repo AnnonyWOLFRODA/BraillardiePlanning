@@ -1,3 +1,5 @@
+import React from 'react';
+
 type Activity = {
   id: string;
   name: string;
